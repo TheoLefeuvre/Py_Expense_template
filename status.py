@@ -18,7 +18,7 @@ def update_user_amount(debts, user, amount):
     i = 0
     while i < len(debts):
         (a, b) = debts[i]
-        if user == a:
+        if user == a[0]:
             debts[i] = (a, b + amount)
             break
         i += 1
