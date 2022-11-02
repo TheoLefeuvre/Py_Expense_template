@@ -70,7 +70,7 @@ def new_expense(*args):
         writed = True
         file.write(other + ',')
     if writed:
-        file.write("\n")
+        file.write(";\n")
 
     file.close()
     print("Expense Added !")
