@@ -29,6 +29,11 @@ expense_questions = [
 def new_expense(*args):
     infos = prompt(expense_questions)
 
+    # Check if amount is a number
+    if not infos.get('amount').isnumeric():
+        print('Amount entered is not a number !')
+        return False
+
     # Check if spender exists beforehand
     boolean = find_user(infos.get('spender'), "users.csv")
     if not boolean:
