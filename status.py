@@ -57,7 +57,6 @@ def show_status():
                 object_expenses.append(obj)
                 # Remove last elt caused by trailing "comma"
                 obj.others.pop()
-                obj.print()
             else:
                 count = 0
             count += 1
